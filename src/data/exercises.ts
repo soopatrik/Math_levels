@@ -8,22 +8,15 @@ import level6Questions from "./level6";
 import level7Questions from "./level7";
 import level8Questions from "./level8";
 
-const generateQuestions = (questions: { question: string, answer: string, topic: string }[], difficulty: number): Question[] => {
-  return questions.map(q => ({ ...q, difficulty }));
-};
-  
-  const exercises: Question[] = [
-    ...generateQuestions(level1Questions, 1),
-    ...generateQuestions(level2Questions, 2),
-    ...generateQuestions(level3Questions, 3),
-    ...generateQuestions(level4Questions, 4),
-    ...generateQuestions(level5Questions, 5),
-    ...generateQuestions(level6Questions, 6),
-    ...generateQuestions(level7Questions, 7),
-    ...generateQuestions(level8Questions, 8),
-  ];
-  
-
-
+const exercises: Question[] = [
+  ...level1Questions,
+  ...level2Questions,
+  ...level3Questions,
+  ...level4Questions,
+  ...level5Questions,
+  ...level6Questions,
+  ...level7Questions,
+  ...level8Questions,
+];
 
 export default exercises;
